@@ -1,0 +1,30 @@
+* {margin: 0; padding: 0;}
+    img {max-width: 100%; height: auto;}
+    li {list-style: none;}
+    a {text-decoration: none;}
+    body {
+        height: 800px;
+    }
+    header {
+        border-bottom: 1px solid #eee;
+        position: sticky;
+        top:0px;
+    }
+    .container {
+        display: flex; align-items: center; padding: 20px;
+    }
+    .container .logo {
+        display: block; width:8%;
+    }
+    .menu {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap :20px;
+        padding: 10px;
+        align-items: center;
+        margin : 0 10px
+    }
+    .menu li a {
+        display: block; color: #000; text-align: center;
+    }
