@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      width: 900px;
+      margin: 0 auto;
+    }
+
+
+    section .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    section .container .item {
+      width: 20rem;
+      /* height: 24rem; */
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    section .container .item img {
+      width: 100%;
+      filter: brightness(80%);
+      transition: all 0.2s;
+    }
+
+    section .container .item img:hover {
+      filter: brightness(100%);
+      transform: scale(1.1);
+    }
+
+    section .container .item .label {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      color: rgb(147 51 234);
+      font-weight: 700;
+      font-size: .75rem;
+      background-color: rgb(243 232 255);
+      padding: 0.1rem 0.3rem;
+      border-radius: 10px;
+    }
+
+    section article {
+      padding: 1rem;
+    }
+
+    section article .application {
+      margin-bottom: 0.5rem;
+    }
+
+    section article .application span {
+      font-size: .75rem;
+      font-weight: 700;
+      color: green;
+      background-color: rgb(220 252 231);
+      padding: 0.3rem;
+      border-radius: 40px;
+    }
+
+    section article p {
+      font-size: .75rem;
+      line-height: 1rem;
+      color: rgb(156 163 175);
+      overflow: hidden;
+      margin-top: 0.25rem;
+    }
+
+    section article .process {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0;
+    }
+
+    section article .process div {
+      font-weight: 700;
+      font-size: .75rem;
+      background-color: rgb(243 244 246);
+      padding: 0.2rem;
+      border-radius: 40px;
+    }
+
+    section article .process span {
+      font-size: .75rem;
+    }
+
+    section article .more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      background-color: rgb(59 130 246);
+      font-size: .875rem;
+      line-height: 1.25rem;
+      color: #fff;
+      padding: 0.4rem;
+      margin-top: 10px;
+    }
+
+    section article .more svg {
+      width: 1rem;
+      height: 1rem;
+      padding: 0.125rem;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      margin-right: 0.25rem
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="top">
+      <h4>교육 과정</h4>
+      <h5>과정 전체보기</h5>
+    </div>
+
+    <div class="container">
+      <div class="item">
+        <img src="https://sniperfactory.com/api/files/courses/2g41rrrm5lttkl0/flutter3rd_qdbQ03hu4U.png" alt="Flutter 모바일 
+        어플리케이션 개발 부트캠프과정">
+        <div class="label">스팩</div>
+        <article>
+          <div class="application">
+            <span>신청가능</span>
+          </div>
+          <h5>Flutter 모바일 어플리케이션 개발 부트캠프과정</h5>
+          <p>4개월 간 스나이퍼팩토리와 함께 Flutter로 "내가 원하는 어플리케이션"을 만들어보는 시간입니다. Flutter와 Dart의 기초부터 심화, 응용까지 배워보고 나만의 어플리케이션으로
+            포트폴리오를 쌓아보세요. 최종적으로 기업의 실제 프로젝트까지 직접 진행할 수 있는 만큼의 개발자로 성장하세요!</p>
+          <div class="process">
+            <div>취업연계과정</div>
+            <span>기수 : 3기 🚀</span>
+          </div>
+          <span class="more">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z">
+              </path>
+            </svg>
+            더 알아보기
+          </span>
+        </article>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
